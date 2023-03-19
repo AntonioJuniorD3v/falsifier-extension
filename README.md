@@ -14,7 +14,7 @@ Gera os seguintes dados:
 - Telefone
 - Email
 
-## Como usar?
+## Como usar
 
 Clone o projeto
 
