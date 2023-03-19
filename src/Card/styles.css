@@ -1,0 +1,51 @@
+#container-avatar {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple);
+  padding: 0 15px;
+}
+
+#container-data {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 15px;
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.info {
+  background-color: var(--white);
+  width: 120px;
+}
+
+.info h2 {
+  color: var(--purple);
+  background-color: var(--white);
+  font-size: 12px;
+}
+
+.info > span {
+  color: var(--gray);
+  background-color: var(--white);
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container-refresh {
+  width: 200px;
+}
+
+#refresh-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 35px;
+  left: 90px;
+  z-index: 1;
+  cursor: pointer;
+}
