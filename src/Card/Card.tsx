@@ -10,6 +10,7 @@ import "./styles.css";
 import { initialValuesReducer } from "./contants";
 import { CountActionKind, Gender, IAction, IState } from "./types";
 import RefreshIcon from "../components/RefreshIcon/RefreshIcon";
+import GithubIcon from "../components/GithubIcon/GithubIcon";
 
 const reducer = (state: IState, action: IAction) => {
   switch (action.type) {
@@ -17,12 +18,13 @@ const reducer = (state: IState, action: IAction) => {
       const randomGender: Gender = ["M", "F"][
         Math.floor(Math.random() * 2)
       ] as Gender;
+      const randomName = falseador.nome.composto(randomGender);
       return {
         ...state,
-        name: falseador.nome.composto(randomGender),
+        name: randomName,
         dateOfBirth: dateOfBirthGenerator(),
         cpf: falseador.doc.cpf(),
-        email: faker.internet.email(),
+        email: falseador.pessoa.email(randomName),
         phone: faker.phone.number("###########"),
         gender: randomGender,
         loading: false,
@@ -118,6 +120,13 @@ export default function Card() {
         </div>
       </div>
       <RefreshIcon id="refresh-icon" onClick={generateFakeDataWithDebounce} />
+      <a
+        title="Github repo"
+        target="_blank"
+        href="https://github.com/AntonioJuniorD3v/falsifier-extension"
+      >
+        <GithubIcon id="github-icon" />
+      </a>
     </>
   );
 }

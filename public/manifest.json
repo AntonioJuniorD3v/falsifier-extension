@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Falseador",
-    "version": "0.0.1",
-    "description": "Gerador de dados fictícios",
+    "version": "1.0.0",
+    "description": "Gerador de dados brasileiros fictícios",
     "author": "Antonio Júnior",
     "action": {
         "default_popup": "./index.html"
