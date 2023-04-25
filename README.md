@@ -2,19 +2,23 @@
 
 Extensão do google chrome geradora de dados fake.
 
+👉 [Link](https://chrome.google.com/webstore/detail/falseador/hkfjlhofmigjcgmlafhlmdkgkpinhgdi?hl=pt-br)
+
 ## Demonstração
 
-![asda](https://raw.githubusercontent.com/AntonioJuniorD3v/falsifier-extension/main/src/assets/gifs/demo.gif)
+![](https://raw.githubusercontent.com/AntonioJuniorD3v/falsifier-extension/main/src/assets/gifs/demo.gif)
+
 ## Funcionalidades
 
-Gera os seguintes dados:
+Os dados são gerados pela <em>lib</em> [Falseador](https://github.com/caiosantesso/falseador)
+
 - Nome
 - Data de nascimento
 - CPF
 - Telefone
 - Email
 
-## Como usar
+## Como rodar o projeto
 
 Clone o projeto
 
@@ -37,15 +41,11 @@ Instale as dependências
 Execute o build do projeto
 
 ```bash
-  npm run build
+  npm run dev
 ```
-
-Vá até suas extenções do chrome e ative o **modo de desenvolvedor** ([Consulte a documentação](https://support.google.com/chrome/a/answer/2714278?hl=en#:~:text=Step%202%3A%20Test%20the%20app%20or%20extension)
-)
-
-Clique em **Carregar descompactado** e selecione a past `dist` gerada pelo `build` do projeto.
 
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+#### Feito com ❤️
