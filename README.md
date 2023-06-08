@@ -47,5 +47,3 @@ Execute o build do projeto
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-#### Feito com ❤️
